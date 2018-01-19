@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:id="@+id/rlGoodsItem"
+    >
+
+    <ImageView
+        android:id="@+id/ivItemImage"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tvItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/ivItemImage"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:textSize="14sp"
+        android:text="Caramel cappucino CaramelcappucinoCaramel cappucinoCaramel" />
+
+    <TextView
+        android:id="@+id/tvItemPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvItemName"
+        android:layout_below="@+id/tvItemName"
+        android:layout_marginTop="10dp"
+        android:text="$2.45"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvShopName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvItemName"
+        android:layout_below="@+id/tvItemPrice"
+        android:layout_marginTop="10dp"
+        android:text="Starbucks"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvPointDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvItemName"
+        android:layout_below="@+id/tvShopName"
+        android:text="2 km"
+        android:textSize="12sp"
+        />
+
+    <TextView
+        android:id="@+id/tvMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvPointDistance"
+        android:layout_toEndOf="@+id/tvPointDistance"
+        android:layout_marginStart="10dp"
+        android:text="Open now"
+        android:textSize="12sp"
+        android:textColor="@android:color/holo_green_light"
+        />
+
+    <ImageView
+        android:id="@+id/ivShopLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/pbShopRank"
+        android:layout_alignTop="@+id/pbShopRank"
+        android:layout_alignEnd="@+id/pbShopRank"
+        android:layout_alignStart="@+id/pbShopRank"
+        android:src="@mipmap/ic_launcher_round" />
+
+    <ProgressBar
+        android:id="@+id/pbShopRank"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/progress_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ivItemImage"
+        android:layout_alignParentEnd="true"
+        android:indeterminate="false"
+        android:max="1000"
+        android:progress="600" />
+
+
+
+
+
+</RelativeLayout>
